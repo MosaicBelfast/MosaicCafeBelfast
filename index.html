@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet"> 
+		<title>Mosaic Cafe Belfast</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="icon" href="logocrop.jpg" type="image/jpeg" sizes="16x16">
+		<style>
+			body {
+				width: 96%;
+				height: 90%;
+				font-family: 'Cormorant Garamond', serif;
+				background-color: #2f2929;
+			}
+
+
+			.page {
+				background-color: white;
+				left: 5%;
+				padding: 2%;
+				padding-left: 5%;
+				margin-bottom: 5%;
+				width: 85%;
+				position: relative;
+				margin-top: 5%;
+				align-content: center;
+			}
+
+			#logo {
+				margin-right: 7%;
+
+			}
+			nav {
+				position: relative;
+				width: 80%;
+				margin-left: 15%;
+			}
+
+			button {
+				background-color: #2f2929;
+				border: none;
+				color: white;
+				font-size: 30px;
+				font-family: 'Cormorant Garamond', serif;
+				cursor: pointer;
+			}
+
+			
+			nav button {
+				position: relative;
+				margin-top: 20%;
+				margin-right: 7%;	
+
+			}
+
+
+			button:active {
+				background-color: white;
+				color: black;
+			}
+
+
+
+			header {
+				width: 103%;
+				background-color: #2f2929;
+				align-content: center;
+			}
+
+			#opendoor img {
+			  	width: 60%;
+			  }
+
+			.wordsRight {
+				position: absolute;
+				top: 8%;
+				left: 63%;
+				width: 36%;
+				height: fit-content;
+				margin: 0 auto;
+			}
+
+
+			.text {
+				font-weight: normal;
+			}
+
+			.rightWords {
+				position: relative;
+				width: 100%;
+			}	
+
+			#wordsLeft {
+				position: absolute;
+				top: 25%;
+				display: inline-block;
+				width: 36%;
+			}
+
+			#onus {
+				position: relative;
+			}
+
+			#rightPic {
+				position: relative;
+				width: fit-content;
+				left: 40%;
+			}
+
+			.bgImg {
+				position: relative;
+				color: white;
+				left: -5.9%;
+			}
+
+			#grabseat {
+				position: relative;
+				padding: 27.1%;
+				left: -5.9%;
+				background: url("seatbg.png") no-repeat;
+				background-size: contain;
+				width: 60%;
+			}
+
+			
+
+			#milks {
+				background: url("everyonebg.png") no-repeat;
+				background-size: contain;
+				width: 60%;
+				padding: 27.1%;
+			}
+
+			.centerWords {
+				position: absolute;
+				width: 42%;
+				top: 1%;
+				left: 20%;
+				color: white;
+			}
+
+			#eryoneDiv {
+				left: 24%;
+				background-color: #2f2929;
+				padding: 2% 0 2% 8%;
+
+			}
+
+			#eryoneDiv button {
+				position: relative;
+				left: 15%;
+				border-width: 1px;
+				border-style: solid;
+				border-color: white;
+			}
+			
+
+			#gallery {
+				margin-left: 5%;				
+			}
+
+			.menuitems {
+				position: relative;
+				display: inline;
+				width: 30%;
+
+			}
+
+			.desc {
+				display: none;
+				position: absolute;
+				left: 3%;
+				margin-top: 10%;
+				padding: 5%;
+				width: 80%;
+				height: auto;
+			}
+
+			.menuPics {
+				position: relative;
+				width: 30%;
+				display: inline;
+			}
+
+			.menuPics:active + .desc {
+				display: inline-block;
+				color: white;
+				background-color: rgba(0,0,0,0.7);
+			}
+
+			.menuPics:hover + .desc {
+				display: inline-block;
+				color: white;
+				background-color: rgba(0,0,0,0.7);
+			}
+
+			ul {
+				list-style-type: none;
+				font-family: "Times New Roman";
+			}
+
+			li {
+				padding: 4% 0;
+			}
+
+			#daysBox {
+				display: inline;
+				align-content: center;
+				margin-top: 10%;
+				width: 40%;
+				height: 50%;
+				background-color: #e6e4e8;
+				position: absolute;
+				padding: 2%;
+			}
+
+			.tab {
+				display: inline-block;
+				margin-left: 40%;
+			}
+
+
+
+			#intPic {
+				margin-left: 35%;
+				height: 40%;
+				width: 60%;
+			}
+
+			.socials {
+				width: 20px;
+				height: 5%;
+			}
+
+
+			footer {
+				width: 97%;
+				background-color: #2f2929;
+				padding: 2% 3%;
+				margin-top: 5%;
+			}
+
+			footer button {
+				margin: 0 3%;
+			}
+
+			#fsocials {
+				margin-left: 50%;
+			}
+
+			@media only screen and (max-width: 1484px) {
+			  
+			  nav button {
+			    margin-right: 5%;
+			  }
+
+			  nav {
+			  	margin-left: 13%;
+			  }
+
+			  #logo {
+			  	margin-right: 5%;
+			  }
+
+			  .wordsRight {
+			  	width:  30%;
+			  }
+
+			  #rightPic {
+			  	width: 60%;
+			  }
+
+			  #rightPic img {
+			  	width: 100%;
+			  }
+			}
+
+			@media only screen and (max-width: 1323px) {
+			  
+			  nav button {
+			    margin-right: 4%;
+			  }
+
+			  nav {
+			  	margin-left: 10%;
+			  }
+
+			  #logo {
+			  	margin-right: 4%;
+			  }
+			}
+
+			@media only screen and (max-width: 1207px) {
+			  
+			  nav button {
+			    margin-right: 3%;
+			  }
+
+			  nav {
+			  	margin-left: 11%;
+			  }
+
+			  #logo {
+			  	margin-right: 3%;
+			  }
+			}
+
+			@media only screen and (max-width: 1138px) {
+			  
+			  nav button {
+			    margin-right: 2%;
+			  }
+
+			  nav {
+			  	margin-left: 11%;
+			  }
+
+			  #logo {
+			  	margin-right: 2%;
+			  }
+
+			  #fsocials {
+					margin-left: 40%;
+				}
+			}
+
+			@media only screen and (max-width: 1073px) {
+			  
+			  nav button {
+			    margin-right: 0;
+			  }
+
+			  nav {
+			  	margin-left: 12%;
+			  }
+
+			  #logo {
+			  	margin-right: 0;
+			  }
+
+			  #daysBox {
+			  	padding-bottom: 5%;
+			  }
+			}
+
+
+			
+		</style>
+		<script>
+			var pageID;
+			const pages = ['home', 'menu', 'hours', 'contact'];
+			
+			
+			function loadPage(page) {
+				if (localStorage.getItem("page") == null && page == null) 
+					pageID = 0;
+				
+				else
+					pageID = page;
+					
+				localStorage.setItem("page", pageID);
+
+				for (var i=0; i<=pages.length; i++) {
+					if (i == pageID) 
+						$('#'+pages[i]).show();
+						
+					else 
+						$('#'+pages[i]).hide();
+				}
+
+			}
+
+
+		</script>
+	</head>
+	<body onload="loadPage(localStorage.getItem('page'))">
+		<header>
+			<nav>
+				<button type="button" onclick="loadPage(0)">Home</button>
+				<button type="button" onclick="loadPage(1)">Menu</button>
+				<img src="logocrop.jpg" id="logo">
+				<button type="button" onclick="loadPage(2)">Opening Hours</button>
+				<button type="button" onclick="loadPage(3)">Contact Us</button>
+			</nav>
+		</header>
+		<div id="home" class="page" hidden>
+			<div id="opendoor">
+				<img src="frontpage.jpg">
+				<div class="wordsRight">
+					<h1>Come on in</h1>
+					<h3 class="text rightWords">A hidden gem in the middle of Elmwood Avenue. We’ve got fresh, affordable food for you to warm up in winter or cool down in summer! We’re a small local cafe, you might recognize us from our last restaurant Soul Food on Ormeau. The Harris family is proud to bring you its newest creations!</h3>
+					<button type="button" class="homeButton" onclick="loadPage(1)">Step Inside</button>
+				</div>	
+			</div>
+			<div id="grabseat">
+				<div class="centerWords">
+					<h1>Grab a seat</h1>
+					<h2 class="text">Have a quick bite while relaxing in our lovely garden. Or you can enjoy the wonderful paintings by Susan Hughes inside with a nice cup of hot chocolate.</h2>
+				</div>	
+			</div>
+			<div id="onus">
+				<div id="wordsLeft">
+					<h1>Have one on us.</h1>
+					<h2 class="text">Get your tenth drink for free by using our loyalty card. Also, students get a 10% discount on all items!</h2>
+				</div>
+				<div id="rightPic"><img src="stampcard.png"></div>	
+			</div>
+			<div id="milks" class="bgImg">
+				<div id="eryoneDiv" class="centerWords">
+					<h1>We've got something for everyone.</h1>
+					<button type="button" class="homeButton" onclick="loadPage(1)">Get a closer look</button>
+				</div>			
+			</div>
+		</div>
+		<div id="menu" class="page" hidden>
+			<h2>We’re always changing it up at Mosaic. No matter the menu, we guarantee some delicious food, with vegan and gluten-free options always available! Come by to see what we’ve come up with today!</h2>
+			<div id="gallery">				
+				<div class="menuitems"><img src="pancakes.png" class="menuPics">
+				<p class="desc"><strong>Smoked Bacon Pancakes  - 5.50£</strong><br>
+					Drizzled with delicious maple syrup.</p></div>
+				<div class="menuitems"><img src="cutloaf.png" class="menuPics">
+				<p class="desc"><strong>Freshly Baked Wheaten Loaf</strong><br>
+					Served with our soup of the day!</p></div>
+				<div class="menuitems"><img src="drinkcroissant.png" class="menuPics">
+				<p class="desc"><strong>Iced Coffee  - 2.5£<br>
+					Pain au Chocolat  - 1£</strong></p></div>
+				<div class="menuitems"><img src="balls.png" class="menuPics">
+				<p class="desc"><strong>Lemon Cake Pops - 1.5£</strong></p></div>
+				<div class="menuitems"><img src="muffins.png" class="menuPics">
+				<p class="desc"><strong>Chocolate Cupcakes - 2£</strong></p></div>
+				<div class="menuitems"><img src="beans.png" class="menuPics">
+				<p class="desc"><strong>Beans @ Queens  - 5.5£</strong><br>
+					Pinto beans, smoky tomato sauce, sourdough toast, avocado, poached egg (vg without egg).</p></div>
+				<div class="menuitems"><img src="cookies1.png" class="menuPics">
+				<p class="desc"><strong>Chocolate Chip Cookies - 2£<br>
+					Chocolate Hazelnut Cookies - 2£</strong></p></div>
+				<div class="menuitems"><img src="squares.png" class="menuPics">
+				<p class="desc"><strong>Chocolate Caramel Squares - 2£</strong></p></div>
+				<div class="menuitems"><img src="bites.jpg" class="menuPics">
+				<p class="desc"><strong>Chocolate Tiffin - 1.5£</strong><br>
+					Chocolate, dried fruit, nuts, orange, booze.</p></div>
+				<div class="menuitems"><img src="icetea.png" class="menuPics">
+				<p class="desc"><strong>Homemade Peach Ice Tea  - 1£</strong></p></div>
+				<div class="menuitems"><img src="lemonsquares.png" class="menuPics">
+				<p class="desc"><strong>Lemon Drizzle  - 2£</strong></p></div>
+				<div class="menuitems"><img src="loaf.png" class="menuPics">
+				<p class="desc"><strong>Wheaten Cob</strong><br>
+				Served with our soup of the day!</p></div>
+				<div class="menuitems"><img src="soupandbread.png" class="menuPics">
+				<p class="desc"><strong>Soup of the Day  - 3.5£</strong><br>
+					Served with our delicious home-baked wheaten or sourdough.</p></div>
+				<div class="menuitems"><img src="salads.png" class="menuPics">
+				<p class="desc"><strong>Salads to go!</strong><br> 
+					- Garlic, coriander,  and mixed bean.<br>
+					- Quinoa, cucumber, red pepper, chickpea, and lemon dressing.<br> 
+					- Red cabbage, lemongrass, sesame, mango, nut praline, and lime asian slaw.</p></div>
+				<div class="menuitems"><img src="cookies.jpg" class="menuPics">
+				<p class="desc"><strong>Homemade Digestive Cookies</strong><br>
+					Used in our tiffins and fifteens.</p></div>
+				<div class="menuitems"><img src="cake.jpg" class="menuPics">
+				<p class="desc"><strong>Coffee Cake Slice - 2£</strong></p></div>
+				<div class="menuitems"><img src="rolls.jpg" class="menuPics">
+				<p class="desc"><strong>Sweet Chili Sausage Roll  - 2£<br>
+					Mushroom & Spinach Spicded Roll (Vg)  - 2£</strong></p></div>
+				<div class="menuitems"><img src="buns.jpg" class="menuPics">
+				<p class="desc"><strong>Raspberry and Almond Muffins - 1.5£</strong><br>
+					Almond, raspberry and coconut.</p></div>
+				<div class="menuitems"><img src="latteart.jpg" class="menuPics">
+				<p class="desc"><strong>Latte - 2.5£</strong></p></div>
+				<div class="menuitems"><img src="florentines.png" class="menuPics">
+				<p class="desc"><strong>Florentines (vg, gf) - 1.5£</strong></p></div>
+				<div class="menuitems"><img src="hotchocolate.jpg" class="menuPics">
+				<p class="desc"><strong>Hot Chocolate  - 2.5£</strong><br>
+					With delicious marshmallows</p></div>
+			</div>
+		</div>
+		<div id="hours" class="page" hidden>
+			<div id="daysBox">
+				<h1>Everyone's Welcome!</h1>
+				<h3 class="text">
+					<ul>
+						<li>Monday &emsp;<span class="tab"></span>10am-3pm</li>
+						<li>Tuesday &emsp;<span class="tab"></span>10am-3pm</li>
+						<li>Wednesday<span class="tab"></span>10am-3pm</li>
+						<li>Thursday &ensp;<span class="tab"></span>10am-3pm</li>
+						<li>Friday &emsp;&ensp;<span class="tab"></span>10am-3pm</li>
+					</ul>
+				</h3>
+			</div>
+			<img src="interior2.png" id="intPic">
+		</div>
+		<div id="contact" class="page" hidden>
+			<div class="col">
+				<h1 class="left">Contact Us</h1>
+				<h3 class="text left">We also do catering for events and functions. Give us a shout if you’d like to hire our services!<br><br>
+				@mosaiccafebelfast
+				<a href="https://www.instagram.com/mosaiccafebelfast/" target="-blank"><img class="socials" src="ig.png"></a>
+				<a href="https://www.facebook.com/mosaiccafebelfast/" target="-blank"><img class="socials" src="fb1.png"></a><br><br>
+				<a href="mailto:mosaicbelfast@gmail.com">mosaicbelfast@gmail.com</a><br><br>
+				07491 806282<br>
+				28 Elmwood Avenue<br>
+				Belfast, BT9 6AY</h3>
+			</div>
+			<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.4938187472036!2d-5.939693818498825!3d54.58475933313008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610994d5bcf59b%3A0xdc33132c2726474!2sMosaic%20cafe!5e0!3m2!1sen!2suk!4v1633302087411!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+		</div>
+		<footer>
+			<button type="button" onclick="loadPage(3)">Contact Us</button>
+			<button type="button" onclick="loadPage(2)">Opening Hours</button>
+			<span id="fsocials"><a href="https://www.instagram.com/mosaiccafebelfast/" target="-blank"><img class="socials" src="ig-white.png"></a> &ensp;
+			<a href="https://www.facebook.com/mosaiccafebelfast/" target="-blank"><img class="socials" src="fb1-white.png"></a></span>
+		</footer>
+	</body>
+</html>
